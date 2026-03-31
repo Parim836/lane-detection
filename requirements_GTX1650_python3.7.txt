@@ -1,0 +1,14 @@
+## python=3.7
+protobuf==3.20.3
+loguru
+tqdm
+matplotlib
+opencv_contrib_python
+numpy
+scikit_learn
+PyYAML
+tensorflow_gpu==1.15.0
+
+torch>=1.2
+torchvision>=0.4.0
+pandas
