@@ -1,0 +1,394 @@
+#upload_btn {
+    width: 50%; 
+    background: #1b60e1 !important;
+    color: #ffffff;
+    border-radius: 5px;
+    font-size: 18px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#text_page1 h1{
+    font-size: 50px;
+    color: #1b60e1;
+    text-align: center;
+}
+#textupload_box{
+    width: 75%;
+    height: 25%;
+    margin-left: auto;
+    margin-right: auto;
+}
+#textupload_box label{
+    font-size:15px;
+    font-weight:100;
+}
+/* overlay พื้นหลัง */
+.modal_overlay{
+    position:fixed;
+    top:0;
+    left:0;
+    width:100%;
+    height:100%;
+    background:rgba(0,0,0,0.45);
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    z-index:9999;
+}
+
+/* การ์ด popup */
+.modal_card{
+    background:#ffffff;
+    padding:40px 50px;
+    border-radius:22px;
+    text-align:center;
+    min-width:420px;
+    box-shadow:0 20px 40px rgba(0,0,0,0.25);
+
+    animation:popupBounce 0.35s ease;
+}
+
+/* icon */
+.modal_icon{
+    font-size:40px;
+    margin-bottom:10px;
+}
+
+/* text */
+.modal_text{
+    font-size:18px;
+}
+
+/* animation เด้ง */
+@keyframes popupBounce{
+    0%{
+        transform:scale(0.7);
+        opacity:0;
+    }
+    60%{
+        transform:scale(1.05);
+        opacity:1;
+    }
+    100%{
+        transform:scale(1);
+    }
+}
+
+.gradio-container {
+    max-width: 100% !important;
+    padding-left: 20px !important;
+    padding-right: 20px !important;
+}
+body {
+    background: #f5f6f8;
+}
+
+/* ===== Card หลัก ===== */
+#page_final .gr-column {
+    border-radius: 18px !important;
+}
+
+/* ===== การ์ดซ้าย (Final Result) ===== */
+.final-card {
+    background: #ffffff;
+    padding: 25px;
+    border-radius: 5px;
+    box-shadow: 0 6px 18px rgba(0,0,0,0.06);
+}
+
+/* ===== หัวข้อใหญ่ ===== */
+h1, h2 {
+    font-weight: 600;
+    color: #2d2d2d;
+}
+
+/* ===== Badge 201 Highways ===== */
+.highway-badge {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    background: linear-gradient(135deg, #2f80ed, #56ccf2);
+    color: white;
+    padding: 10px 18px;
+    border-radius: 999px;
+    font-weight: 500;
+    font-size: 16px;
+    box-shadow: 0 4px 12px rgba(47,128,237,0.4);
+}
+
+/* ===== กล่อง API Key ===== */
+#page_final input,
+#page_final textarea {
+    border-radius: 12px !important;
+    border: 1px solid #e0e0e0 !important;
+}
+#content_wrapper img {
+    margin-bottom: 5px !important;
+}
+
+#select_btn{
+    background: #1b60e1 !important;
+    color: #ffffff !important;
+    font-size: 18px !important;
+     flex: 2;
+    border: none;
+}
+#skip_btn {
+    background: #c6d9fa !important;
+    color: #000000 !important;
+    font-size: 18px !important;
+    border: none;
+    flex:1;
+    
+}
+#back_btn{
+    background: #c6d9fa !important;
+    color: #000000 !important;
+    font-size: 18px !important;
+    border: none;
+    flex:1;
+}
+#download_btn:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.18);
+}
+
+/* ===== Map card ขวา ===== */
+.map-card {
+    background: white;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 6px 18px rgba(0,0,0,0.06);
+}
+
+/* ===== Plot ===== */
+canvas {
+    border-radius: 16px !important;
+}
+/* ===== Street View Image ===== */
+#page_show img {
+    width:100% !important;
+    height:600px !important;
+    object-fit:cover !important;
+    border-radius:12px;
+}
+.lane-text p{
+    font-size: 30px !important;
+    font-weight: 300 !important;
+    color: #2d2d2d !important;
+    text-align: center;
+    margin-top: 0px;
+}
+.counter-text p{
+    font-size: 24px !important;
+    margin-top: 2px;
+    color: #555 !important;
+    text-align: center;
+    margin-top: 5px !important;
+    margin-bottom: 10px !important;
+}
+#content_wrapper .gr-button {
+    margin-top: 5px !important;
+}
+#content_wrapper .gr-row {
+    margin-top: 5px !important;
+}
+
+#floating_btn{
+    position:fixed;
+    top:20px;
+    right:20px;
+    width:150px;
+    height:45px;
+    border-radius:25px;
+    font-size:16px;
+    background:#1b60e1 !important;
+    color:rgb(255, 255, 255) !important;
+    font-weight:600;
+    box-shadow:0 4px 10px rgba(0,0,0,0.2);
+    z-index:2000;
+}
+#content_wrapper{
+    transition: transform 0.3s ease;
+    max-width:1000px;
+    width:100%;
+    margin:0 auto;
+
+    display:flex;
+    flex-direction:column;
+    align-items:center;
+}
+/* ลดช่องว่างหน้า street view */
+#content_wrapper img{
+    margin-bottom:5px !important;
+}
+
+.lane-text p{
+    margin-top:2px !important;
+    margin-bottom:4px !important;
+}
+
+.counter-text p{
+    margin-bottom:6px !important;
+}
+
+#content_wrapper .gr-button{
+    margin-top:4px !important;
+}
+
+#content_wrapper .gr-row{
+    margin-top:4px !important;
+}
+#content_wrapper h1{
+    text-align:left;
+    margin-bottom:15px;
+}
+.gr-image{
+    display:flex;
+    justify-content:center;
+}
+
+/* ตอนเปิด sidebar */
+.shift-left{
+    transform: translateX(-350px);
+}
+
+#sidebar_panel{
+    position:fixed;
+    top:0;
+    right:0;
+    width:400px;
+    height:100vh;
+    background:white;
+    box-shadow:-4px 0 18px rgba(0,0,0,0.2);
+    padding:20px;
+}
+
+/* table scroll */
+#sidebar_panel .gr-dataframe{
+    height:65vh !important;
+    overflow-y:auto !important;
+}
+
+/* ปุ่ม submit ติดล่าง */
+#sidebar_bottom{
+    position:absolute;
+    bottom:20px;
+    left:20px;
+    right:20px;
+}
+/* ซ่อนปุ่มเพิ่ม row / column */
+/* ซ่อนปุ่ม New row / New column */
+button[aria-label="New row"]{
+    display:none !important;
+}
+
+button[aria-label="New column"]{
+    display:none !important;
+}
+.gr-dataframe .toolbar{
+    display:none !important;
+}
+
+/* เผื่อบางเวอร์ชัน */
+
+.gr-dataframe th:last-child{
+    width:60px !important;
+}
+
+.gr-dataframe td:last-child{
+    text-align:center;
+    font-size:22px;
+    font-weight:bold;
+    cursor:pointer;
+    padding:8px !important;
+}
+.gr-dataframe td:last-child:hover{
+    background:#ff4d4f;
+    color:white;
+}
+/* พื้นหลังม่วง */
+#page_download{
+    padding-top:20px;
+    
+}
+/* การ์ดกลาง */
+#download_card{
+    max-width:1100px;
+    width:75%;
+    margin:60px auto;
+    padding:50px 60px;
+
+    background:#ffffff;
+    border-radius:16px;
+
+    box-shadow:0 8px 25px rgba(0,0,0,0.12);
+
+    text-align:center;
+}
+.download_title{
+    font-size:38px;
+    font-weight:700;
+    margin-bottom:10px;
+}
+/* กล่องไฟล์ */
+#file_box{
+    border:1px solid #e5e7eb;;
+    border-radius:10px;
+    padding:18px;
+    margin-top:20px;
+}
+#download_btn {
+    background: #1b60e1 !important;
+    color: rgb(255, 255, 255) !important;
+    border-radius: 0px !important;
+    font-size: 18px !important;
+    font-weight: 600 !important;
+    padding: 12px !important;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
+    transition: all 0.2s ease;
+}
+#downloadback{
+    background: #c6d9fa !important;
+    color: rgb(0, 0, 0) !important;
+    border-radius: 0px !important;
+    font-size: 18px !important;
+    font-weight: 600 !important;
+    padding: 12px !important;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
+    transition: all 0.2s ease;
+}
+
+
+#download_btn:hover{
+    background:#1b60e1;
+}
+.big_download_btn{
+    background:#1b60e1;
+    color:white !important;
+    font-size:22px;
+    font-weight:600;
+    padding:22px 30px;
+    border-radius:16px;
+    text-align:center;
+    width:420px;
+    margin:auto;
+    cursor:pointer;
+    box-shadow:0 6px 14px rgba(0,0,0,0.2);
+    transition:0.2s;
+}
+
+.big_download_btn:hover{
+    background:#1b60e1;
+    transform:scale(1.03);
+}
+button:disabled {
+    background: #cccccc !important;
+    color: #666 !important;
+    cursor: not-allowed;
+}
+@keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+}
