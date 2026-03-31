@@ -30,7 +30,8 @@ pip install -r requirement_RTX4060_python3.12.3.txt
 - 2.3 สำหรับส่วนติดต่อกับผู้ใช้ (User Interface)
 เพื่อให้ส่วนติดต่อกับผู้ใช้ (UI) และการเชื่อมต่อส่วนต่างๆ สามารถทำงานได้ ต้องติดตั้ง: 
 ```bash
-python -m venv web_env
+conda create -n tools python=3.10
+conda activate tools
 pip install -r requirement_web.txt
 ```
 หลังจากติดตั้ง Dependency เรียบร้อยแล้ว ให้แก้ไขชื่อ Environment ที่ใช้สำหรับรันโมเดลในไฟล์ `model.py` ให้ตรงกับ Environment ที่ได้สร้างไว้
