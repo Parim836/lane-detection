@@ -84,6 +84,7 @@ pip install -r requirement_web.txt
 
 #### Combined Evaluation Results
 เป็ยการวัดประสิทธิภาพของระบบหลังจากรวมผลจากหลายแบบจำลอง โดยจะประเมินว่า โมเดลสามารถจำแนกและจับเส้นเลนจากภาพถนนได้ถูกต้อง ครบถ้วน และแม่นยำแค่ไหน
+![คำอธิบายรูป](image/combine.png)
 ##### Lane Segmentation Results
 |Evaluation | Score(%)|
 |-------------|------------|
