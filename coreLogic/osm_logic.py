@@ -1,7 +1,7 @@
 import gradio as gr
 import matplotlib.pyplot as plt
 from pyrosm import OSM
-from loading import render_loading
+from UI.loading import render_loading
 
 # PAGE 1 → Upload OSM
 def upload_osm(file):

@@ -4,7 +4,7 @@ import requests
 from PIL import Image
 from io import BytesIO
 from slugify import slugify
-from loading import render_loading
+from UI.loading import render_loading
 
 # กำหนด path หลักสำหรับเก็บรูป
 BASE_FOLDER = os.path.join(os.getcwd(), "streetview_output")
@@ -12,7 +12,7 @@ os.makedirs(BASE_FOLDER, exist_ok=True)
 
 def download_streetview(api_key, filtered_edges, road_name):
     if not api_key:
-        yield "❌ Please enter your API Key."
+        yield "Please enter your API Key."
         return
 
     road_folder = slugify(road_name)

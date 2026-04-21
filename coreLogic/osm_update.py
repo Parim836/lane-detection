@@ -13,24 +13,24 @@ def build_lane_updates(csv_path):
 
     lane_updates = {}
 
-    # 🔥 group ตาม id
+    # group ตาม id
     for way_id, group in df.groupby("id"):
 
         # เอาเฉพาะที่ user เลือก
         df_fix = group[group["fix_lane"].notna()]
 
-        # ❗ ถ้าไม่มีการเลือกเลย → ข้าม
+        # ถ้าไม่มีการเลือกเลย = ข้าม
         if len(df_fix) == 0:
             continue
 
-        # 🔥 หา "ค่าที่ถูกเลือกมากสุด"
+        # หา "ค่าที่ถูกเลือกมากสุด"
         counts = df_fix["fix_lane"].value_counts()
         top_values = counts[counts == counts.max()].index.tolist()
 
         if len(top_values) == 1:
             lane_updates[int(way_id)] = int(top_values[0])
         else:
-            # 🔥 ถ้าเสมอ → เอาค่าล่าสุด
+            # ถ้าเสมอ = เอาค่าล่าสุด
             latest_row = df_fix.sort_values("image_id").iloc[-1]
             lane_updates[int(way_id)] = int(latest_row["fix_lane"])
 

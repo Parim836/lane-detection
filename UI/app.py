@@ -1,10 +1,10 @@
-from osm_logic import upload_osm, plot_highways, go_to_page5
-from streetview import download_streetview
-from pages import go_to_highway, build_map
+from coreLogic.osm_logic import upload_osm, plot_highways, go_to_page5
+from services.streetview import download_streetview
+from map import go_to_highway, build_map
 from image_viewer import load_images
-from pipeline import run_lane_pipeline
+from coreLogic.pipeline import run_lane_pipeline
 from loading import render_loading
-from osm_update import update_osm_lanes
+from coreLogic.osm_update import update_osm_lanes
 import gradio as gr
 import pandas as pd
 import os
