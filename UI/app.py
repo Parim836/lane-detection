@@ -9,7 +9,7 @@ import gradio as gr
 import pandas as pd
 import os
 
-with open("style.css", encoding="utf-8") as f:
+with open("static/style.css", encoding="utf-8") as f:
     css = f.read()
 fix_lanes = {}
 def handle_all(selected):
